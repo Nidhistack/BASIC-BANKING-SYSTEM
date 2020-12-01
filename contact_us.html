@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACT US</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style type="text/css">
+		
+		body {
+  			 font-family: 'Autour One';font-size: 18px;
+		}
+		.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+		@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+		</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+
+	<div class="container">
+	
+			
+		<a href="" class="navbar-brand" >
+			<img src="https://thumbs.dreamstime.com/b/icon-bank-black-background-vector-illustration-108342481.jpg" alt="logo" style="width:60px;">
+
+		</a>
+
+		<button class="navbar-toggler" data-toggle="collapse" data-target="
+		#abc">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<h1 class="text-white">GRIP BANK</h1>
+		<div class="collapse navbar-collapse" id="abc" >
+			<ul class="navbar-nav text-center ml-auto">
+				<li class="nav-item">
+					<a href="homepg.html" class="nav-link">HOME</a>	
+				</li>
+				<li class="nav-item" >
+					<a href="view_users.php" class="nav-link ">View Users</a>		
+				</li>
+
+				<li class="nav-item">
+					<a href="transaction_details.php" class="nav-link">Transaction Details</a>	
+				</li>
+
+				<li class="nav-item">
+					<a href="contact_us.html" class="nav-link">Contact Us</a>	
+				</li>
+			</ul>		
+		</div>		
+	</div>	
+</nav>
+
+
+
+<div class="row ">
+	<div class="column">
+		<section>
+			<div class="container" id="about">
+				<h1 class="text pt-3 pb-3 ">Love to Hear From You</h1>
+				<hr class="w-25 ml-0">
+
+				<div class="row mb-5 ">
+					
+					<div class="col-lg-6 col-md-6 col-12 ">
+						
+							<p>If you have any questions about us , please get in touch. We are always happy to hear from you. Simply fill in the form or get in touch via the following options:</p>
+						<div>
+			                 <label><b>Email</b></label>:  info@gripbank.com
+				         </div>
+				            <div>
+				                 <label><b>Address</b></label>: Thane Mumbai
+				            </div>
+				            <div>
+				                  <label><b>Phone</b></label>: 879-890-9767
+				            </div>
+				                
+				            <div>
+				                  <label><b>Website</b></label>:  <a href="#"> www.gripbank.com</a>
+				            </div>
+				            <div>
+				                   <label><b>Working Hours</b></label>: Mon to Fri: 10:30 AM - 4.30 PM
+				            </div>
+				            <div id="googleMap" style="width:90%;height:300px;"></div>
+
+									<script>
+									function myMap() {
+									var mapProp= {
+									  center:new google.maps.LatLng(19.297610,72.846010),
+									  zoom:18,
+									  mapTypeId:google.maps.MapTypeId.ROADMAP
+									};
+									var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+									}
+									</script>
+
+									  <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"async defer
+									  type="text/javascript"></script>
+							</div>
+							
+						</div>
+					</div>
+		</section>
+			</div> 
+
+<div class="column float-right-">
+	<form class="form-control-lg" method="GET" action="thanku.php">
+	<h1 class="text pt-3 pb-3 ">Get In Touch With Us</h1>
+	<hr class="w-25 ml-0">
+		<div class="form-group">
+		   <br>
+		    <input type="text" class="form-control-lg mb-2 mr-sm-2" name="name" id="name" placeholder="Enter Your Name">
+		   
+		  </div>
+		  <div class="form-group">
+		  
+		    <input type="Email" name="emailid" class="form-control-lg mb-2 mr-sm-2" id="Email" placeholder="Enter a Valid Email-Id">
+		  </div>
+		  <div class="form-group">
+		  
+		  <textarea class="form-control-lg mb-2  mr-sm-2"  rows="40" id="exampleFormControlTextarea1"   placeholder="Any Suggestions.."></textarea>
+		  </div>
+		 
+		<button type="submit"  class="btn btn-outline-light btn-success" style="font-size: 25px; width: 250px;">SUBMIT</button>
+		
+	</form>
+	</div>
+			</div>
+</body>
+</html>
